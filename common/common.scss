@@ -1,0 +1,36 @@
+// Fonts: Mulish for headings, Inter for body (CalcAir Design System role split).
+@font-face { font-family: 'Mulish VF'; src: url($mulish) format('woff2-variations'); font-weight: 200 900; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Mulish VF'; src: url($mulish-italic) format('woff2-variations'); font-weight: 200 900; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url($inter-400) format('woff2'); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url($inter-400-italic) format('woff2'); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url($inter-600) format('woff2'); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: 'Inter'; src: url($inter-700) format('woff2'); font-weight: 700; font-style: normal; font-display: swap; }
+
+:root {
+  --heading-font-family: 'Mulish VF', 'Segoe UI', system-ui, sans-serif;
+  --font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  --d-border-radius: 0.5rem;
+  --d-button-border-radius: 0.5rem;
+  --d-input-border-radius: 0.5rem;
+  --ca-gradient: linear-gradient(90deg, #8ee3ef 0%, #23ce6b 100%);
+  --ca-shadow-card: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+h1, h2, h3, h4, h5, h6, .fancy-title, .category-name, .d-header .title { font-weight: 700; }
+
+// Portal header: white bar with the emerald→cyan brand stripe underneath.
+.d-header { box-shadow: none; border-bottom: 1px solid var(--primary-low); }
+.d-header::after { content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 3px; background: var(--ca-gradient); }
+
+// Primary actions use brand emerald with white text, like portal buttons.
+.btn-primary { background: #23ce6b; color: #fff; .d-icon { color: #fff; } }
+.btn-primary:hover, .btn-primary:focus { background: #16a34a; color: #fff; }
+.btn-primary:active { background: #15803d; }
+
+// Marian-blue focus ring (DS focus foundation).
+:focus-visible { outline: 2px solid var(--ca-focus); outline-offset: 2px; }
+
+// Cards/panels: soft portal card shadow.
+.topic-list, .category-boxes .category-box, .user-card, .group-card, .modal-inner-container { box-shadow: var(--ca-shadow-card); }
+
+a { text-underline-offset: 2px; }

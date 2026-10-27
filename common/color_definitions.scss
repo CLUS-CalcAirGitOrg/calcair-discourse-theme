@@ -1,0 +1,2 @@
+// Marian blue vanishes on navy; dark schemes use non-photo blue for focus.
+:root { --ca-focus: #{if(is-light-color-scheme(), #274690, #8ee3ef)}; }

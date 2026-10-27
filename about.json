@@ -1,0 +1,51 @@
+{
+  "name": "CalcAir v2",
+  "component": false,
+  "license_url": null,
+  "about_url": null,
+  "authors": null,
+  "theme_version": null,
+  "minimum_discourse_version": null,
+  "maximum_discourse_version": null,
+  "assets": {
+    "icons-sprite": "assets/icons-sprite.svg",
+    "mulish": "assets/mulish.woff2",
+    "mulish-italic": "assets/mulish-italic.woff2",
+    "inter-400": "assets/inter-400.woff2",
+    "inter-400-italic": "assets/inter-400-italic.woff2",
+    "inter-600": "assets/inter-600.woff2",
+    "inter-700": "assets/inter-700.woff2"
+  },
+  "color_schemes": {
+    "CalcAir v2 Light": {
+      "primary": "1b264f",
+      "secondary": "ffffff",
+      "tertiary": "16a34a",
+      "quaternary": "274690",
+      "header_background": "ffffff",
+      "header_primary": "1b264f",
+      "selected": "dcfce7",
+      "hover": "f0fdf4",
+      "highlight": "e6f7ff",
+      "danger": "dc3545",
+      "success": "23ce6b",
+      "love": "ec4899"
+    },
+    "CalcAir v2 Dark": {
+      "primary": "e6e8ec",
+      "secondary": "141518",
+      "tertiary": "23ce6b",
+      "quaternary": "8ee3ef",
+      "header_background": "0e0f11",
+      "header_primary": "e6e8ec",
+      "selected": "22252b",
+      "hover": "1b1d21",
+      "highlight": "1d2a3a",
+      "danger": "f87171",
+      "success": "23ce6b",
+      "love": "ec4899"
+    }
+  },
+  "modifiers": {},
+  "learn_more": "https://meta.discourse.org/t/beginners-guide-to-using-discourse-themes/91966"
+}
