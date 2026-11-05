@@ -34,3 +34,8 @@ h1, h2, h3, h4, h5, h6, .fancy-title, .category-name, .d-header .title { font-we
 .topic-list, .category-boxes .category-box, .user-card, .group-card, .modal-inner-container { box-shadow: var(--ca-shadow-card); }
 
 a { text-underline-offset: 2px; }
+
+// Sign-in is the CalcAir portal only (OpenID Connect): a first sign-in creates the forum account,
+// so Sign Up is a second Log In. Hidden here, not with allow_new_registrations, which would also
+// stop OIDC from creating accounts for people new to the forum.
+.sign-up-button, .signup-cta { display: none !important; }
